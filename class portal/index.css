@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Adobe Clean Regular";
+  src: url("C:/Users/Desktop/Website/fonts/Harlow_Solid_Italic.ttf");
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +10,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  line-height: 1.4;
+  line-height: 1.5;
   background-color: #000000;
   color: #ffffff;
 }
@@ -27,34 +31,35 @@ li {
   list-style: none;
 }
 
-#header-bar {
-}
-
 .page-container {
+  position: relative;
   max-width: 960px;
   width: 80%;
   margin: auto;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  border-radius: 1px;
+  width: 100%;
+  /* background-color: #747474; */
+  /* padding: 0 16px; */
+  height: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2px;
+  border-bottom: #424242;
 }
 
 .logo {
   font-weight: 700;
 }
 
-#main-nav {
-  padding: 0 16px;
-  height: 96px;
-}
-
-.navbar {
-  position: sticky;
-}
-
-#header-bar {
-  display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: space-between;
-}
+/* #header-bar {
+} */
 
 nav .navbar-right {
   display: flex;
@@ -65,4 +70,31 @@ nav .navbar-right {
 .nav-item {
   margin: 0, 15px;
   padding: 10px;
+}
+.main-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  margin-bottom: 50px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #111111;
+  margin-top: 50px;
+  padding: 15px;
+}
+footer p {
+  text-align: center;
 }
